@@ -10,8 +10,7 @@ Router.map(function(){
       // Return result
       this.response.end('{\n "result": ' + result + '}\n');
   });
-});
-Router.route('/', {
-    name: 'main',
-    template: 'main'
+  this.route('/', {
+      name: 'main',
+      template: 'main'})
 });
