@@ -10,7 +10,12 @@ Router.map(function(){
       // Return result
       this.response.end('{\n "result": ' + result + '}\n');
   });
-  this.route('/', {
-      name: 'main',
-      template: 'main'})
+});
+Router.route('/', {
+    name: 'main',
+    template: 'main'
+});
+
+Router.configure({
+  notFoundTemplate: "NotFound"
 });
