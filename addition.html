@@ -1,0 +1,14 @@
+<head>
+    <title>Simple POST addition</title>
+</head>
+<body>
+    {{main}}
+</body>
+
+<template name="main">
+  <form name="test" action="/addition" method="post" enctype='application/json' target="_blank">
+    Number 1: <input type="number" step="1" name="number1"><br>
+    Number 2: <input type="number" step="1" name="number2"><br>
+    <input type="submit" value="Submit">
+  </form>
+</template>
